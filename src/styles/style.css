@@ -1,0 +1,447 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*::after, *::before {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  -webkit-font-smoothing: antialiased;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 100%;
+  font-weight: 700;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  background-color: #2c3e50;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav .title {
+  font-size: 100%;
+  font-weight: 400;
+}
+
+header nav .title .live {
+  border-radius: 0.5rem;
+  background-color: #eb3b5a;
+  padding: 0.3rem;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+}
+
+header nav ul li {
+  margin-left: 1rem;
+}
+
+header nav ul li a {
+  font-size: 100%;
+  font-weight: 400;
+  text-decoration: none;
+  color: #fff;
+}
+
+header nav .virus-logo {
+  width: 100px;
+}
+
+header h1 {
+  font-size: 130%;
+  font-weight: 700;
+  color: #fff;
+}
+
+.main-container .wrapper .live-stats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  text-align: center;
+  padding: 2rem;
+  background-color: #ecf0f1;
+}
+
+.main-container .wrapper .live-stats .stats-title {
+  color: #c0392b;
+}
+
+.main-container .wrapper .live-stats .stats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 2rem;
+}
+
+.main-container .wrapper .live-stats .stats div {
+  padding: 1rem;
+  background-color: #fff;
+  -webkit-box-shadow: 0 1px 0 0 #d7d8db, 0 0 0 1px #e3e4e8;
+          box-shadow: 0 1px 0 0 #d7d8db, 0 0 0 1px #e3e4e8;
+  border-radius: 0.5rem;
+}
+
+.main-container .wrapper .live-stats .stats div p {
+  margin-top: 1rem;
+}
+
+.main-container .wrapper .live-stats .stats div p a {
+  text-decoration: none;
+}
+
+.main-container .wrapper .live-stats .stats h1 {
+  font-size: 150%;
+  font-weight: 400;
+}
+
+.main-container .wrapper .live-stats .stats .total-infect .infected {
+  color: #fa8231;
+}
+
+.main-container .wrapper .live-stats .stats .total-death .death {
+  color: red;
+}
+
+.main-container .wrapper .live-stats .stats .total-recovered .recover {
+  color: #20bf6b;
+}
+
+.main-container .wrapper .graph {
+  text-align: center;
+  background-color: #ecf0f1;
+}
+
+.main-container .wrapper .graph h1 {
+  color: #fff;
+  background-color: #eb3b5a;
+  padding: 1rem;
+}
+
+.main-container .wrapper .graph img {
+  width: 40%;
+}
+
+.main-container .wrapper .countries {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-container .wrapper .countries table {
+  width: 50%;
+  background-color: #ecf0f1;
+}
+
+.main-container .wrapper .countries table thead {
+  background-color: #343A40;
+}
+
+.main-container .wrapper .countries table thead tr th {
+  padding: 1rem;
+  color: #fff;
+}
+
+.main-container .wrapper .countries table tbody tr td {
+  padding: 0.5rem;
+}
+
+.main-container .wrapper .countries table tbody tr .deaths {
+  color: red;
+}
+
+.main-container .wrapper .countries table tbody tr:nth-of-type(odd) {
+  background-color: #ffffff;
+}
+
+.main-container .wrapper .countries table tbody tr:nth-of-type(even) {
+  background-color: #F7F7F7;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem;
+  background-color: #2c3e50;
+}
+
+footer .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .info h1 {
+  font-size: 130%;
+  font-weight: 400;
+  color: #fff;
+}
+
+footer .info h1 span {
+  font-size: 70%;
+  font-weight: 300;
+}
+
+footer .info p {
+  margin-top: 0.5rem;
+  font-size: 100%;
+  font-weight: 300;
+  color: #fff;
+}
+
+footer .author {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .author ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+}
+
+footer .author ul li {
+  margin-left: 1rem;
+}
+
+footer .author ul li a {
+  font-size: 100%;
+  font-weight: 300;
+  text-decoration: none;
+  color: #fff;
+}
+
+footer .author a img {
+  width: 300px;
+}
+
+@media all and (max-width: 968px) {
+  header nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  header .virus-logo {
+    width: 100px;
+  }
+  header h1 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  header ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-bottom: 1rem;
+  }
+  header ul li {
+    width: 100%;
+  }
+  .main-container .wrapper .live-stats h1 {
+    font-size: 140%;
+    font-weight: 400;
+  }
+  .main-container .wrapper .live-stats .stats {
+    width: 100%;
+  }
+  .main-container .wrapper .live-stats .stats div {
+    padding: 0.5rem;
+  }
+  .main-container .wrapper .live-stats .stats div h1 {
+    font-size: 140%;
+    font-weight: 400;
+  }
+  .main-container .wrapper .live-stats .stats div h1 span {
+    font-size: 100%;
+    font-weight: 400;
+  }
+  .main-container .wrapper .graph {
+    width: 100%;
+  }
+  .main-container .wrapper .graph h1 {
+    padding: 0.5rem;
+    font-size: 130%;
+    font-weight: 400;
+  }
+  .main-container .wrapper .graph img {
+    width: 70%;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .main-container .wrapper .live-stats h1 {
+    font-size: 140%;
+    font-weight: 400;
+  }
+  .main-container .wrapper .live-stats .stats div {
+    padding: 0.5rem;
+  }
+  .main-container .wrapper .live-stats .stats div h1 {
+    font-size: 100%;
+    font-weight: 400;
+  }
+  .main-container .wrapper .live-stats .stats div h1 span {
+    font-size: 90%;
+    font-weight: 400;
+  }
+  .main-container .wrapper .graph h1 {
+    padding: 0.5rem;
+    font-size: 130%;
+    font-weight: 400;
+  }
+  .main-container .wrapper .graph img {
+    width: 100%;
+  }
+  .main-container .wrapper .countries table {
+    width: 100%;
+  }
+  .main-container .wrapper .countries table thead tr th {
+    font-size: 70%;
+    font-weight: 300;
+    padding: 0.2rem;
+  }
+  .main-container .wrapper .countries table tbody tr td {
+    font-size: 70%;
+    font-weight: 300;
+    padding: 0.3rem;
+  }
+  .main-container footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main-container footer .info h1 {
+    font-size: 90%;
+    font-weight: 300;
+  }
+  .main-container footer .author a img {
+    width: 100px;
+  }
+  .main-container footer .author ul li a {
+    font-size: 80%;
+    font-weight: 300;
+  }
+}
+/*# sourceMappingURL=style.css.map */

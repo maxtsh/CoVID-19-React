@@ -1,0 +1,437 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    &::after, &::before{
+        box-sizing: inherit;
+        -webkit-font-smoothing: antialiased;
+    }
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 100%;
+    font-weight: 700;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    background-color: #2c3e50;
+
+    nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+
+        .title{
+            font-size: 100%;
+            font-weight: 400;
+
+            .live{
+                border-radius: 0.5rem;
+                background-color: #eb3b5a;
+                padding: 0.3rem;
+            }
+        }
+
+        ul{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            list-style: none;
+
+            li{
+                margin-left: 1rem;
+                
+                a{
+                    font-size: 100%;
+                    font-weight: 400;
+                    text-decoration: none;
+                    color: #fff;
+                }
+            }
+        }
+
+        .virus-logo{
+            width: 100px;
+        }
+    }
+
+    h1{
+        font-size: 130%;
+        font-weight: 700;
+        color: #fff;
+    }   
+}
+
+.main-container{
+
+    .wrapper{
+
+        .live-stats{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: stretch;
+            text-align: center;
+            padding: 2rem;
+            background-color: #ecf0f1;
+            
+            .stats-title{
+                color: #c0392b
+            }
+
+            .stats{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                align-items: center;
+                margin-top: 2rem;
+
+                div{
+                    padding: 1rem;
+                    background-color: #fff;
+                    box-shadow: 0 1px 0 0 #d7d8db, 0 0 0 1px #e3e4e8;
+                    border-radius: 0.5rem;
+
+                    p{
+                        margin-top: 1rem;
+                        
+                        a{
+                            text-decoration: none;
+                        }
+                    }
+                }
+
+                h1{
+                    font-size: 150%;
+                    font-weight: 400;
+                    
+                }
+
+                .total-infect{
+
+                    .infected{
+                        color: #fa8231;
+                    }
+                }
+
+                .total-death{
+
+                    .death{
+                        color: red;
+                    }
+                }
+
+                .total-recovered{
+                    .recover{
+                        color: #20bf6b;
+                    }
+                }
+            }
+        }
+
+        .graph{
+            text-align: center;
+            background-color: #ecf0f1;
+
+            h1{
+                color: #fff;
+                background-color: #eb3b5a;
+                padding: 1rem;
+            }
+
+            img{
+                width: 40%;
+            }
+        }
+
+        .countries{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            table{
+                width: 50%;
+                background-color: #ecf0f1;
+
+                thead{
+                    background-color: #343A40;
+
+                    tr{
+
+                        th{
+                            padding: 1rem;
+                            color: #fff;
+                        }
+                    }
+                }
+
+                tbody{
+
+                    tr{
+                        td{
+                            padding: 0.5rem;
+                        }
+
+                        .deaths{
+                            color: red;
+                        }
+                    }
+
+                    tr:nth-of-type(odd){
+                        background-color: #ffffff;
+                    }
+                    tr:nth-of-type(even){
+                        background-color: #F7F7F7;
+                    }
+                }
+            }
+        }
+    }
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+    padding: 1rem;
+    background-color: #2c3e50;
+
+    .info{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+
+        h1{
+            font-size: 130%;
+            font-weight: 400;
+            color: #fff;
+
+            span{
+                font-size: 70%;
+                font-weight: 300;
+            }
+        }
+
+        p{
+            margin-top: 0.5rem;
+            font-size: 100%;
+            font-weight: 300;
+            color: #fff;
+        }
+    }
+
+
+    .author{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        ul{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                align-items: center;
+                list-style: none;
+            
+            li{
+                margin-left: 1rem;
+
+                a{
+                    font-size: 100%;
+                    font-weight: 300;
+                    text-decoration: none;
+                    color: #fff;
+                }
+            }
+        }
+
+        a{
+            img{
+                width: 300px;
+            }
+        }
+    }
+}
+
+@media all and (max-width: 968px){
+    header{
+
+        nav{
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .virus-logo{
+            width: 100px;
+        }
+
+        h1{
+           margin-top: 2rem;
+           margin-bottom: 2rem;
+        }
+        ul{
+            flex-direction: column;
+            padding-bottom: 1rem;
+
+            li{
+                width: 100%;
+            }
+        }
+    }
+
+    .main-container{
+ 
+        .wrapper{
+            
+            .live-stats{
+
+                h1{
+                    font-size: 140%;
+                    font-weight: 400;
+                }
+
+                .stats{
+                    width: 100%;
+                    div{
+                        padding: 0.5rem;
+                        h1{
+                            font-size: 140%;
+                            font-weight: 400;
+                            span{
+                                font-size: 100%;
+                                font-weight: 400;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .graph{
+                width: 100%;
+                h1{
+                    padding: 0.5rem;
+                    font-size: 130%;
+                    font-weight: 400;
+                }
+
+                img{
+                    width: 70%;
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width: 768px){
+    .main-container{
+        .wrapper{
+            .live-stats{
+
+                h1{
+                    font-size: 140%;
+                    font-weight: 400;
+                }
+
+                .stats{
+
+                    div{
+                        padding: 0.5rem;
+                        h1{
+                            font-size: 100%;
+                            font-weight: 400;
+                            span{
+                                font-size: 90%;
+                                font-weight: 400;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .graph{
+
+                h1{
+                    padding: 0.5rem;
+                    font-size: 130%;
+                    font-weight: 400;
+                }
+
+                img{
+                    width: 100%;
+                }
+            }
+
+            .countries{
+
+                table{
+                    width: 100%;
+
+                    thead{
+                        
+                        tr{
+    
+                            th{
+                                font-size: 70%;
+                                font-weight: 300;
+                                padding: 0.2rem;
+                            }
+                        }
+                    }
+    
+                    tbody{
+    
+                        tr{
+                            td{
+                                font-size: 70%;
+                                font-weight: 300;
+                                padding: 0.3rem;
+                            }
+                        }
+    
+                    }
+                }
+            }
+        }
+        footer{
+            flex-direction: column;
+
+            .info{
+                h1{
+                    font-size: 90%;
+                    font-weight: 300;
+                }
+            }
+
+            .author{
+                a{
+                    img{
+                        width: 100px;
+                    }
+                }
+
+                ul{
+                    li{
+                        a{
+                            font-size: 80%;
+                            font-weight: 300;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
